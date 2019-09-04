@@ -19,4 +19,17 @@ body {
   color: #eee;
   text-transform: uppercase;
   font-family: 'Manjari', sans-serif;
+  border-bottom: 3px solid transparent;
+  margin-top: 3px;
+}
+
+.header a:hover {
+  border-bottom: 3px solid #eee;
+  transition: 1s;
+  border-radius: 3px;
+}
+
+.slider {
+  text-align: center;
+  background: #549ec3;
 }
