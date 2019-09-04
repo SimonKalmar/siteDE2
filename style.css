@@ -32,10 +32,18 @@ body {
 .slider {
   text-align: center;
   background: #549ec3;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  font-family: 'Manjari', sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
   font-family: 'Manjari', sans-serif;
   font-size: 16px;
@@ -43,7 +51,7 @@ body {
 }
 
 .siteNumber2 {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
   font-family: 'Manjari', sans-serif;
   margin-top: 20px;
