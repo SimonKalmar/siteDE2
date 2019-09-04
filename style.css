@@ -38,7 +38,7 @@ body {
   width: 90%;
   margin: 0 auto;
   font-family: 'Manjari', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 20px;
 }
 
@@ -47,4 +47,8 @@ body {
   margin: 0 auto;
   font-family: 'Manjari', sans-serif;
   margin-top: 20px;
+}
+
+.siteNumber2 p {
+  font-size: 16px;
 }
