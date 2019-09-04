@@ -1,1 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
 
+body {
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  background: #000;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #eee;
+  text-transform: uppercase;
+  font-family: 'Manjari', sans-serif;
+}
