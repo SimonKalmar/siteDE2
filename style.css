@@ -33,3 +33,18 @@ body {
   text-align: center;
   background: #549ec3;
 }
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Manjari', sans-serif;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.siteNumber2 {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Manjari', sans-serif;
+  margin-top: 20px;
+}
