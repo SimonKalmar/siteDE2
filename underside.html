@@ -4,24 +4,18 @@
     <meta charset="utf-8">
     <title>Git step-by-step</title>
     <link rel="stylesheet" href="style.css">
-	  
-	  <style>
-		  img {width: auto;}
-		  pre {background-color: #cccccc; padding: 20px;}
-		  .gitHeader a{display:block;}
-	  
-	  </style>
   </head>
   <body>
     <div class="content">
       <div class="header">
       	<a href="index.html">Forside</a>
-      	<a href="underside.html">Underside</a>
+      	<a href="underside.html">Git</a>
       	<a href="underside1.html">Underside1</a>
       </div>
+      <div class="maincontent">
       <section class="main">
         <h1>Git step-by-step</h1>
-		  
+
 		  <div class="gitHeader">
 			  <a href="#no1">1. Make a repo</a>
 			  <a href="#no2">2. Clone a repo</a>
@@ -32,12 +26,12 @@
 			  <a href="#no7">7. Merge the branch</a>
 			  <a href="#no8">8. Was that everything?</a>
 		  </div>
-		  
-		  
+
+
 		  <br><h2 id="no1">1. Make a repo</h2>
 		  <p>Gå ind på github og lav en ny repo. Du skal her tilføje din samarbejdspartner, så du automatisk kan push og pull til din repo.</p>
 		  <img src="billeder/githubRepo1.png" height="400" alt="Github"/>
-		  
+
 		  <br><h2 id="no2">2. Clone a repo</h2>
 		  <p>Der er oprettet en repo, for at du kan ændre den, skal du nu klone den. Det skal du gøre ved at gå ind på terminalen og være der, hvor du vil have mappen. <br>Skriv dette i terminalen:</p>
 		  <pre>
@@ -45,10 +39,10 @@ cd projekter
 git clone https://github.com/SimonKalmar/siteDE2.git
 		  </pre>
 		  <p>Du har nu klonet repo'en til din computer</p>
-		  
+
 		  <br><h2 id="no3">3. Change it</h2>
 		  <p>Du har nu hentet en repo. I repo'en laver du en ny side med tilhørende style. Denne side har dine samarbejdsparnter ikke, derfor skal du pushe siden.</p>
-		  
+
 		  <br><h2 id="no4">4. Push the changes</h2>
 		  <p>Når du har ændret siden skal det pushes, så dine andre gruppemedlemmer kan få adgang til dine ændringer. Du skal nu tilføje dine ændringer til git, hvilket du gør ved at skrive:</p>
 <pre>
@@ -56,8 +50,8 @@ cd projektmappe
 git add .
 git status
 </pre>
-		<p>Ved at skrive dette, tilføjer du dine stage(iscenesætter) til git, hvorefter du kan se om git har registeret dette vha. git status.</p>	  
-		  
+		<p>Ved at skrive dette, tilføjer du dine stage(iscenesætter) til git, hvorefter du kan se om git har registeret dette vha. git status.</p>
+
 <pre>
 git commit -m 'Besked til din gruppe'
 git status
@@ -67,14 +61,14 @@ git status
 git push -u origin version2
 </pre>
 		  <p>Ved at skrive git push uploader git dine ændringer, hvorefter dine gruppemedlemmer kan hente dem ned ved at pull</p>
-		  
+
 		  <br><h2 id="no5">5. Pull the changes</h2>
 		  <p>Dine gruppemedlemmer har ikke fået dine ændringer, derfor skal de nu hente det gennem git. De skal derfor gå ind i terminalen og anvende pull metoden for, at I kan få det samme. Du skal huske at være i den samme mappe, så du ikke hante den forkerte.</p>
 <pre>
 cd projektmappe
 git pull
 </pre>
-		  
+
 		  <br><h2 id="no6">6. Make a branch</h2>
 		  <p>Nu skal der laves en version 2 af projektet. Da der skal foretages store ændringer, hvor man beholder originalen(masteren) indtil man har testet om den nye version virker.</p>
 <pre>
@@ -86,7 +80,7 @@ git branch version2
 git checkout version2
 </pre>
 		  <p>Du ændre nu koderne, så du kan teste om det virker.</p>
-		  
+
 		  <br><h2 id="no7">7. Merge the branch</h2>
 		  <p>Nu hvor ændringerne er lavet, og de er testet om, de virker skal de nu sættes sammen med masteren, som er de orginale koder. <br>
 		  Du skal nu ud i masteren, hvorefter du sammensætter din branch og din master. På den måde bliver masterne koderne opdateret, og dine ændringer i din branch bliver sammensæt sammen med masteren.</p>
@@ -94,22 +88,24 @@ git checkout version2
 cd projekt
 git checkout master
 git merge version2
+git push
 </pre>
 		<p>Nu hvor du har sammensat dine ændringer kan du vælge at slette din branch, ved at skrive (sletter du din branch, kan du ikke få den igen):</p>
 <pre>
 git branch -d version2
 </pre>
-		
+
 		<p>Fortryder du at du vil slette den kan du skrive dette:</p>
 <pre>
 git branch -D version2
 </pre>
-		  
+
 		  <br><h2 id="no8">8. Was that everything?</h2>
 		  <p>Du har nu lært grundstenene i git.</p>
-		  
-		  
+
+
       </section>
     </div>
+  </div>
   </body>
 </html>

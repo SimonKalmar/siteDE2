@@ -5,12 +5,14 @@ body {
 }
 
 .header {
-  width: 100%;
+  width: 50px;
   display: flex;
   justify-content: space-around;
-  height: 100px;
+  height: 100vh;
   align-items: center;
-  background: #000;
+  flex-direction: column-reverse;
+  background: #294e78;
+  position: fixed;
 }
 
 .header a {
@@ -21,6 +23,7 @@ body {
   font-family: 'Manjari', sans-serif;
   border-bottom: 3px solid transparent;
   margin-top: 3px;
+  transform: rotate(-90deg);
 }
 
 .header a:hover {
@@ -68,3 +71,16 @@ body {
   width: 100%;
   flex-wrap: wrap;
 }
+
+.maincontent {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {width: auto;}
+pre {background-color: #cccccc; padding: 20px;}
+.gitHeader a{display:block;}
